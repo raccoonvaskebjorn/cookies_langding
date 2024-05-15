@@ -1,6 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
+:root{
+    --page_bg: #5243F4;
+    --font_color: #fff; 
+    --link_color: #fff; 
+    --main_font: "Stepp-Book";
 }
 @font-face {
     font-family: 'Stepp-Book';
@@ -8,13 +10,21 @@
 }
 @font-face {
     font-family: 'Steppe-ExtraBold';
-    src: url(./fonts/Steppe-ExtraBold.ttf);
+    src: url(./fonts/Steppe-ExtraBold.ttf); 
 }
-body {
-    background-color: #5243F4;
-    font-family: 'Stepp-Book', sans-serif;
-    color: #fff;
-}
+html{ width:100%; height:100%; background:var( --page_bg ); color:var( --font_color ); font-size:14px; line-height:1.25em; font-family:var( --main_font ); padding:0px; margin:0px; overflow-x:hidden; }
+body{ min-height:100%; display:flex; flex-flow:column nowrap; align-items:stretch; justify-content:stretch; padding:0px; margin:0px; gap:0; position:relative; overflow-x:hidden; }
+*{ box-sizing:border-box; outline:none; resize:none; cursor:default; } 
+h1, h2, h3, h4, h5, h6, p, span{ cursor:default; color:var( --font_color ); font-family:var( --main_font ); } 
+a{ font-family:var( --main_font ); color:var( --link_color ); text-decoration:none; cursor:pointer; }
+label{ cursor:pointer; } 
+button{ cursor:pointer; border:0; }
+.resize{ flex-grow:1; flex-shrink:1; }
+.noresize{ flex-grow:0; flex-shrink:0; } 
+.al{ text-align:left; }
+.ac{ text-align:center; }
+.ar{ text-align:right; }
+
 .button {
     background-color: #fff;
     border-radius: 60px;
@@ -30,7 +40,7 @@ body {
     cursor: pointer;
 }
 .button:hover {
-    background-color: #eeeeee;
+    background-color: #eee;
 }
 .container {
     max-width: 1200px;
@@ -72,7 +82,7 @@ body {
     max-width: 811px;
 }
 .main_title {
-    font-family: 'Steppe-ExtraBold',sans-serif;
+    font-family:var( --main_font );
     font-size: 90px;
     line-height: 100%;
     margin-bottom: 20px;
