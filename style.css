@@ -12,19 +12,62 @@
     font-family: 'Steppe-ExtraBold';
     src: url(./fonts/Steppe-ExtraBold.ttf); 
 }
-html{ width:100%; height:100%; background:var( --page_bg ); color:var( --font_color ); font-size:14px; line-height:1.25em; font-family:var( --main_font ); padding:0px; margin:0px; overflow-x:hidden; }
-body{ min-height:100%; display:flex; flex-flow:column nowrap; align-items:stretch; justify-content:stretch; padding:0px; margin:0px; gap:0; position:relative; overflow-x:hidden; }
-*{ box-sizing:border-box; outline:none; resize:none; cursor:default; } 
-h1, h2, h3, h4, h5, h6, p, span{ cursor:default; color:var( --font_color ); font-family:var( --main_font ); } 
-a{ font-family:var( --main_font ); color:var( --link_color ); text-decoration:none; cursor:pointer; }
-label{ cursor:pointer; } 
-button{ cursor:pointer; border:0; }
+/* RESET */
+html{ 
+    width: 100%; 
+    height: 100%; 
+    background: var( --page_bg ); 
+    color: var( --font_color ); 
+    font-size: 16px; 
+    line-height: 1.25em; 
+    font-family: var( --main_font ); 
+    padding: 0px; 
+    margin: 0px; 
+    overflow-x: hidden; 
+}
+body{ 
+    min-height: 100%; 
+    display: flex; 
+    flex-flow: column nowrap; 
+    align-items: stretch; 
+    justify-content: stretch; 
+    padding: 0px; 
+    margin: 0px; 
+    gap: 0; 
+    position: relative; 
+    overflow-x: hidden; 
+}
+*{ 
+    box-sizing: border-box; 
+    outline: none; 
+    resize: none; 
+    cursor: default; 
+    padding: 0; 
+    margin: 0; 
+} 
+h1, h2, h3, h4, h5, h6, p, span{ 
+    cursor: default; 
+    color: var( --font_color ); 
+    font-family: var( --main_font ); 
+} 
+a{ 
+    font-family: var( --main_font ); 
+    color: var( --link_color ); 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+label{ cursor: pointer; } 
+button{ 
+    cursor: pointer; 
+    border: 0; 
+}
 .resize{ flex-grow:1; flex-shrink:1; }
 .noresize{ flex-grow:0; flex-shrink:0; } 
-.al{ text-align:left; }
-.ac{ text-align:center; }
-.ar{ text-align:right; }
+.al{ text-align: left; }
+.ac{ text-align: center; }
+.ar{ text-align: right; }
 
+/* MAIN */
 .button {
     background-color: #fff;
     border-radius: 60px;
@@ -39,22 +82,14 @@ button{ cursor:pointer; border:0; }
     outline: none;
     cursor: pointer;
 }
-.button:hover {
-    background-color: #eee;
-}
+.button:hover { background-color: #eee; }
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.header {
-    padding: 40px 0;
-}
-.logo img {
-    vertical-align: bottom;
-}
-.menu {
-    margin-left: 250px;
-}
+.header { padding: 40px 0; }
+.logo img { vertical-align: bottom; }
+.menu { margin-left: 250px; }
 .header .container {
     display: flex;
     align-items: center;
@@ -71,16 +106,12 @@ button{ cursor:pointer; border:0; }
     text-decoration: none;
     color: #fff;
 }
-.menu_item a:hover {
-    border-bottom: 2px solid #fff;
-}
+.menu_item a:hover { border-bottom: 2px solid #fff; }
 .main_content {
     padding-top: 161px;
     padding-bottom: 200px;
 }
-.main_info {
-    max-width: 811px;
-}
+.main_info { max-width: 811px; }
 .main_title {
     font-family:var( --main_font );
     font-size: 90px;
@@ -92,8 +123,6 @@ button{ cursor:pointer; border:0; }
     font-size: 18px;
     line-height: 130%;
     margin-bottom: 40px;
-}
-.main_action {
 }
 .main_image {
     position: absolute;
