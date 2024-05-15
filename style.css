@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Stepp-Book';
+    src: url(./fonts/Steppe-Book.ttf);
+}
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url(./fonts/Steppe-ExtraBold.ttf);
+}
+body {
+    background-color: #5243F4;
+    font-family: 'Stepp-Book', sans-serif;
+    color: #fff;
+}
+.button {
+    background-color: #fff;
+    border-radius: 60px;
+    width: 188px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #5243F4;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #eeeeee;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    padding: 40px 0;
+}
+.logo img {
+    vertical-align: bottom;
+}
+.menu {
+    margin-left: 250px;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.menu_list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.menu_item a {
+    font-size: 16px;
+    line-height: 130%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.menu_item a:hover {
+    border-bottom: 2px solid #fff;
+}
+.main_content {
+    padding-top: 161px;
+    padding-bottom: 200px;
+}
+.main_info {
+    max-width: 811px;
+}
+.main_title {
+    font-family: 'Steppe-ExtraBold',sans-serif;
+    font-size: 90px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.main_text {
+    max-width: 697px;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+.main_action {
+}
+.main_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
