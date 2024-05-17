@@ -17,7 +17,7 @@ for(let i = 0; i < buttons.length; i++){
     }    
 }
 // CHANGE CURRENCY BUTTON
-const prices = document.getElementsByClassName("products_item_prise");
+const prices = document.getElementsByClassName("product_item_prise");
 console.log(prices);
 document.getElementById("change-currency").onclick = function(e){
     const currency = e.target.innerText; 
