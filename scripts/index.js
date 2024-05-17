@@ -10,7 +10,7 @@ for(let i = 0; i < links.length; i++){
     }    
 }
 // PROCESS CARDS BUTTONS
-const buttons = document.querySelectorAll(".products-item .button");
+const buttons = document.querySelectorAll(".products_items .button");
 for(let i = 0; i < buttons.length; i++){
     buttons[i].onclick = function(){
         document.getElementById("order").scrollIntoView({behavior: "smooth"});
