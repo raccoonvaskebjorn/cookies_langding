@@ -35,6 +35,14 @@ document.getElementById("change-currency").onclick = function(e){
         newCurrency = '€';
         cof = 0.9;
     } 
+    else if( currency === 'BYN' ){
+        newCurrency = '€';
+        cof = 0.9;
+    } 
+    else if( currency === '€' ){
+        newCurrency = '¥';
+        cof = 6.9;
+    }
     e.target.innerText = newCurrency;
     for( let i=0; i<prices.length; i++ ){
         prices[i].innerText = +( prices[i].getAttribute("data-base-price") * cof ).toFixed(1) + " " + newCurrency;
